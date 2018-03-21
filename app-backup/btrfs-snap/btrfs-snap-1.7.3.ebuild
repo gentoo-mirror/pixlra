@@ -19,8 +19,8 @@ COMMON_DEPEND="
 RDEPEND="${COMMON_DEPEND}"
 
 src_install() {
-	insinto /opt/bin/
+	insinto /usr/bin/
 
-	exeinto /opt/bin/
+	exeinto /usr/bin/
 	doexe ${PN}
 }
