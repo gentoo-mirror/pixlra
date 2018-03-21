@@ -5,28 +5,26 @@ EAPI=6
 
 inherit git-r3
 
-DESCRIPTION="Kernie - Kernel Genie, is a Gentoo kernel manager that makes kernel operations easier"
+DESCRIPTION="Kernie - Kernel Genie, is a Gentoo kernel manager"
 HOMEPAGE="https://github.com/jpataias/kernie"
 
 EGIT_REPO_URI="https://github.com/jpataias/kernie"
 EGIT_BRANCH="master"
 
-LICENSE="GPL-3
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-COMMON_DEPEND="
+DEPEND="
 	dev-util/dialog
 	app-admin/eclean-kernel
 "
-RDEPEND="${COMMON_DEPEND}"
-
-DISTDDIR=$WORKDIR
+RDEPEND="${DEPEND}"
 
 src_install() {
-    insinto /usr/bin/
+	insinto /usr/bin/
 
-    exeinto /usr/bin/
-    doexe ${PN}
+	exeinto /usr/bin/
+	doexe ${PN}
 }
