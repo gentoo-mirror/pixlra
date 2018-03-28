@@ -17,14 +17,17 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND="
+	app-shells/bash:0
 	dev-util/dialog
 	app-admin/eclean-kernel
+	app-portage/eix
 "
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/bin/
-
-	exeinto /usr/bin/
+	exeinto /usr/sbin/
 	doexe ${PN}
+
+	insinto /etc
+	doins files/${PN}.conf
 }
