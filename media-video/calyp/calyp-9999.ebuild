@@ -6,10 +6,10 @@ EAPI=6
 inherit eutils cmake-utils git-r3
 
 DESCRIPTION="Calyp is an open-source QT based raw video player"
-HOMEPAGE="https://github.com/pixlra/playuver"
+HOMEPAGE="https://github.com/pixlra/calyp"
 LICENSE="GPL-2"
 
-EGIT_REPO_URI="https://github.com/pixlra/playuver.git"
+EGIT_REPO_URI="https://github.com/pixlra/calyp.git"
 EGIT_BRANCH="master"
 
 SLOT=0
