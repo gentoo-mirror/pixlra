@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -6,12 +6,12 @@ EAPI=6
 inherit eutils versionator
 
 RNAME="oxygen"
-SR="R"
+SR="3a"
 
 DESCRIPTION="Eclipse IDE for C/C++"
 HOMEPAGE="http://www.eclipse.org"
 
-SRC_BASE="http://eclipse.bluemix.net/packages/${RNAME}/data/eclipse-cpp-${RNAME}-${SR}-linux-gtk"
+SRC_BASE="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/${RNAME}/${SR}/eclipse-cpp-${RNAME}-${SR}-linux-gtk"
 SRC_URI="
 	amd64? ( ${SRC_BASE}-x86_64.tar.gz -> ${P}-x86_64.tar.gz )
 	x86? ( ${SRC_BASE}.tar.gz -> ${P}.tar.gz )
