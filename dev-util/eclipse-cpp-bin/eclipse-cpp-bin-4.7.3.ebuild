@@ -13,9 +13,10 @@ HOMEPAGE="http://www.eclipse.org"
 
 SRC_BASE="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/${RNAME}/${SR}/eclipse-cpp-${RNAME}-${SR}-linux-gtk"
 SRC_URI="
-	amd64? ( ${SRC_BASE}-x86_64.tar.gz -> ${P}-x86_64.tar.gz )
-	x86? ( ${SRC_BASE}.tar.gz -> ${P}.tar.gz )
+	amd64? ( ${SRC_BASE}-x86_64.tar.gz&r=1 -> ${P}-x86_64.tar.gz )
 "
+
+# 	x86? ( ${SRC_BASE}.tar.gz -> ${P}.tar.gz&r-1 )
 
 LICENSE="EPL-1.0"
 SLOT="4.7"
