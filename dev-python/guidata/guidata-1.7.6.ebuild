@@ -17,8 +17,6 @@ IUSE=""
 
 DEPEND="
 	|| ( dev-python/PyQt4[${PYTHON_USEDEP}] dev-python/PyQt5[${PYTHON_USEDEP}] )
-	dev-python/spyder[${PYTHON_USEDEP}]
-	dev-python/h5py[${PYTHON_USEDEP}]
 "
 
 RDEPEND="${DEPEND}"
