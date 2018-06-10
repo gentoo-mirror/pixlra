@@ -50,14 +50,3 @@ src_configure() {
 	)
 	cmake-utils_src_configure
 }
-
-src_install () {
-
-# 	insinto /etc
-# 	newins doc/${PN}.conf.example ${PN}.conf
-
-	doman doc/${PN}c.1
-	doman doc/${PN}s.1
-
-	dodoc doc/${PN}.conf.example* ChangeLog
-}
