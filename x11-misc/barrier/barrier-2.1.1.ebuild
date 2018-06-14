@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 IUSE="libressl qt5"
 RESTRICT="test"
 
-COMMON_DEPEND="
+DEPEND="
 	!libressl? ( dev-libs/openssl:* )
 	libressl? ( dev-libs/libressl )
 	net-misc/curl
@@ -34,15 +34,11 @@ COMMON_DEPEND="
 		dev-qt/qtwidgets:5
 		net-dns/avahi[mdnsresponder-compat]
 	)
+	x11-base/xorg-proto
 "
-DEPEND="
-	${COMMON_DEPEND}
-	x11-proto/kbproto
-	x11-proto/randrproto
-	x11-proto/xextproto
-	x11-proto/xineramaproto
-	x11-proto/xproto
-"
+
+RDEPEND="${DEPEND}"
+
 src_configure() {
 	local mycmakeargs=(
 		-DBARRIER_BUILD_INSTALLER=OFF
