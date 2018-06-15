@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DEPEND=sys-apps/debianutils
+DESCRIPTION=Middleware do Cartao de Cidadao
+EAPI=6
+HOMEPAGE=https://www.cartaodecidadao.pt
+KEYWORDS=~amd64
+LICENSE=Licence-Cartao-Cidadao-App
+RDEPEND=app-crypt/ccid app-text/poppler[qt5] dev-libs/openssl dev-libs/xerces-c dev-libs/xml-security-c >=dev-qt/qtcore-5.5.0 >=dev-qt/qtgui-5.0.2 >=dev-qt/qtnetwork-5.0.2 >=dev-qt/qtprintsupport-5.0.2 >=dev-qt/qtwidgets-5.2.0 media-libs/jasper net-misc/curl sys-apps/pcsc-lite sys-apps/pcsc-tools virtual/jre
+SLOT=0
+SRC_URI=https://www.autenticacao.gov.pt/documents/10179/11962/pteid-mw_3.0.12_amd64.deb/7bb1bfbf-a3b5-4c90-9e3e-38740dbe504b
+_eclasses_=desktop	1b286a7e7143d8c4ec89cd0d2743a097	epatch	9a5f039771f143195164a15a4faa41a1	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	5b8ce72259e08104b337fe28c6de5dbc	ltprune	607e058da37aa6dabfa408b7d61da72e	multilib	97f470f374f2e94ccab04a2fb21d811e	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607	unpacker	f40f7b4bd5aa88c2a4ba7b0d1e0ded70	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	versionator	26ca8a8bd95d6a74122c08ba98a4ee72
+_md5_=119606d0a3530bec60ec347b27aa4455
