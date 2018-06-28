@@ -46,3 +46,10 @@ src_configure() {
 	)
 	cmake-utils_src_configure
 }
+
+src_install() {
+	if use qt5; then
+		newicon -s 256 res/${PN}.png ${PN}.png
+		newmenu res/${PN}.desktop ${PN}.desktop
+	fi
+}
