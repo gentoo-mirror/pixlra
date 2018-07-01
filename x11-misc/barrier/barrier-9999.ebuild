@@ -2,15 +2,16 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit eutils cmake-utils flag-o-matic
+inherit eutils cmake-utils flag-o-matic  git-r3
 
 DESCRIPTION="Lets you easily share a single mouse and keyboard between multiple computers"
 HOMEPAGE="https://github.com/debauchee/barrier"
-SRC_URI="https://github.com/debauchee/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+
+EGIT_REPO_URI="https://github.com/debauchee/${PN}.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=
 IUSE="libressl qt5"
 RESTRICT="test"
 
@@ -37,7 +38,7 @@ DEPEND="
 
 RDEPEND="${DEPEND}"
 
-PATCHES=( "${FILESDIR}"/${PN}-qt5.11-port.patch )
+# PATCHES=( "${FILESDIR}"/${PN}-qt5.11-port.patch )
 
 src_configure() {
 	local mycmakeargs=(
