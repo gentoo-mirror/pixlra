@@ -1,15 +1,15 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit eutils unpacker versionator
+inherit eutils unpacker
 
 DESCRIPTION="Middleware do Cartao de Cidadao"
 HOMEPAGE="https://www.cartaodecidadao.pt"
 LICENSE="Licence-Cartao-Cidadao-App"
 
-SRC_URI="https://www.autenticacao.gov.pt/documents/10179/11962/pteid-mw_ubuntu16_amd64.deb/d1a2c945-e505-4378-abad-287867f982a7"
+SRC_URI="https://www.autenticacao.gov.pt/documents/10179/11962/pteid-mw_ubuntu14_amd64.deb/e89b6245-7195-46f3-8635-d703ff9c02f6"
 
 SLOT="0"
 KEYWORDS="~amd64"

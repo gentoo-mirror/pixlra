@@ -3,16 +3,16 @@
 
 EAPI=6
 
-inherit eutils cmake-utils qmake-utils git-r3 xdg
+inherit eutils cmake-utils qmake-utils xdg
 
 DESCRIPTION="A QT5-based editor for the TikZ language"
 HOMEPAGE="http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language"
+SRC_URI="https://github.com/fhackenberger/${PN}/archive/${PV}.tar.gz"
 LICENSE="GPL-2"
 SLOT="5"
-KEYWORDS=""
-IUSE="kde -ktexteditor +doc -debug"
+KEYWORDS="~amd64"
 
-EGIT_REPO_URI="https://github.com/jfmcarreira/ktikz.git"
+IUSE="kde +doc -debug"
 
 DEPEND="
 	dev-qt/qtcore:5
@@ -45,9 +45,6 @@ src_prepare() {
 
 src_configure() {
 	if use kde; then
-			local mycmakeargs=(
-			-DKTIKZ_USE_KTEXTEDITOR=$(usex ktexteditor)
-		)
 		cmake-utils_src_configure
 	else
 		KDECONFIG="CONFIG-=usekde"

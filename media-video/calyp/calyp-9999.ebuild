@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -27,11 +27,6 @@ DEPEND="
 		dev-qt/qtprintsupport:5
 		dev-qt/qtwidgets:5
 	)
-	qt4? (
-		dev-qt/qtdbus:4
-		dev-qt/qtcore:4
-		dev-qt/qtgui:4
-	)
 	ffmpeg? ( virtual/ffmpeg )
 	opencv? ( media-libs/opencv )
 "
@@ -41,15 +36,10 @@ RDEPEND="
 	${DEPEND}
 "
 
-REQUIRED_USE="
-	?? ( qt5 qt4 )
-	qt4? ( !opencv )
-"
-
 src_configure() {
 	local mycmakeargs=(
 		-DUSE_SSE=$(usex cpu_flags_x86_sse)
-		-DUSE_QT4=$(usex qt4)
+		-DBUILD_APP=$(usex qt5 )
 		-DUSE_FFMPEG=$(usex ffmpeg)
 		-DUSE_OPENCV=$(usex opencv)
 		-DUSE_STATIC=$(usex static-libs)
