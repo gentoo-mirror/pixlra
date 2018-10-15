@@ -1,26 +1,24 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit eutils versionator
+inherit eutils
 
-RNAME="neon"
-SR=$(get_version_component_range 3 $PV)
+RNAME="2018-09"
+SR="R"
 
 DESCRIPTION="Eclipse IDE for C/C++"
 HOMEPAGE="http://www.eclipse.org"
 
-SRC_BASE="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/${RNAME}/${SR}/eclipse-cpp-${RNAME}-${SR}-linux-gtk"
-
+SRC_BASE="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/${RNAME}/R/eclipse-cpp-${RNAME}-linux-gtk"
 SRC_URI="
 	amd64? ( ${SRC_BASE}-x86_64.tar.gz&r=1 -> ${P}-x86_64.tar.gz )
-	x86? ( ${SRC_BASE}.tar.gz&r=1 -> ${P}.tar.gz )
 "
 
 LICENSE="EPL-1.0"
-SLOT="4.6"
-KEYWORDS="-* ~amd64 ~x86"
+SLOT="4.9"
+KEYWORDS="-* ~amd64"
 IUSE=""
 
 RDEPEND="
@@ -41,8 +39,8 @@ src_install() {
 
 	dohtml -r readme/*
 
-	cp "${FILESDIR}"/eclipserc-bin-${SLOT} "${T}" || die
-	cp "${FILESDIR}"/eclipse-bin-${SLOT} "${T}" || die
+	cp "${FILESDIR}"/eclipserc-bin "${T}/eclipserc-bin-${SLOT}" || die
+	cp "${FILESDIR}"/eclipse-bin "${T}/eclipse-bin-${SLOT}" || die
 	sed "s@%SLOT%@${SLOT}@" -i "${T}"/eclipse{,rc}-bin-${SLOT} || die
 
 	insinto /etc
