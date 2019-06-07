@@ -29,6 +29,7 @@ DEPEND="
 	)
 	virtual/latex-base
 	dev-tex/pgf
+	dev-texlive/texlive-latexextra
 "
 RDEPEND="${DEPEND}
 	!media-gfx/ktikz:4
@@ -56,7 +57,7 @@ src_configure() {
 
 src_compile() {
 		if use !doc; then
-			comment_add_subdirectory doc
+		    cmake_comment_add_subdirectory doc
 		fi
 		if use kde; then
 			cmake-utils_src_compile
