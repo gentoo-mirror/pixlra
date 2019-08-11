@@ -2,3 +2,12 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+app-text/kbibtex:webengine - Use dev-qt/qtwebengine for HTML previews
+app-text/kbibtex:webkit - Use dev-qt/qtwebkit for HTML previews
+app-text/kbibtex:zotero - Enable support for synchronisation with zotero.org web service
+media-gfx/ktikz:ktexteditor - Using KTextEditor framework
+media-video/calyp:ffmpeg - Support ffmpeg formats
+media-video/calyp:opencv - Support for opencv
+media-video/calyp:qt4 - GUI using Qt4 lib
+media-video/calyp:qt5 - GUI using Qt5 lib
+media-video/calyp:static-libs - Build static libs
