@@ -1,6 +1,6 @@
 app-backup/btrfs-snap 1.7.3: btrfs-snap creates and maintains the history of snapshots of btrfs filesystems
 app-misc/cartao-cidadao-app 2.4.6: Middleware do Cartao de Cidadao
-app-misc/cartao-cidadao-auth 2.0.36: Autenticacao do Cartao de Cidadao em java
+app-misc/cartao-cidadao-auth 2.0.45: Autenticacao do Cartao de Cidadao em java
 app-misc/solaar 9999: A Linux device manager for Logitech's Unifying Receiver peripherals
 app-portage/g-octave 9999: A tool that generates and installs ebuilds for Octave-Forge
 app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
