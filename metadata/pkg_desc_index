@@ -1,10 +1,8 @@
 app-backup/btrfs-snap 1.7.3: btrfs-snap creates and maintains the history of snapshots of btrfs filesystems
 app-misc/cartao-cidadao-auth 2.0.45: Autenticacao do Cartao de Cidadao em java
 app-portage/g-octave 9999: A tool that generates and installs ebuilds for Octave-Forge
-app-text/kbibtex 9999: BibTeX editor to edit bibliographies used with LaTeX
 dev-python/guidata 1.7.6: Automatic GUI generation for easy dataset editing and display
 dev-util/eclipse-cpp-bin 4.7.3 4.9.0 4.10.0: Eclipse IDE for C/C++
-kde-misc/ktoshiba 9999: Function (FN) key monitoring for Toshiba laptops
 media-gfx/ktikz 0.12 9999: A QT5-based editor for the TikZ language
 media-video/calyp 1.0.0 9999: Calyp is an open-source QT based raw video player
 net-im/yakyak-bin 1.5.2: Desktop chat client for Google Hangouts
