@@ -5,8 +5,5 @@
 		<email>jfmcarreira@gmail.com</email>
 		<name>Joao Carreira</name>
 	</maintainer>
-	<use>
-		<flag name="ktexteditor">Using KTextEditor framework</flag>
-	</use>
 </pkgmetadata>
 

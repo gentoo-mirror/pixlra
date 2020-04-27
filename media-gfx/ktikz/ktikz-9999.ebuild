@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -10,7 +10,7 @@ HOMEPAGE="http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language"
 LICENSE="GPL-2"
 SLOT="5"
 KEYWORDS=""
-IUSE="kde -ktexteditor +doc -debug"
+IUSE="kde +doc -debug"
 
 EGIT_REPO_URI="https://github.com/jfmcarreira/ktikz.git"
 
@@ -45,9 +45,6 @@ src_prepare() {
 
 src_configure() {
 	if use kde; then
-			local mycmakeargs=(
-			-DKTIKZ_USE_KTEXTEDITOR=$(usex ktexteditor)
-		)
 		cmake-utils_src_configure
 	else
 		KDECONFIG="CONFIG-=usekde"
