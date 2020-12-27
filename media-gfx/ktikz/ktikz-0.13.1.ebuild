@@ -1,9 +1,9 @@
-# Copyright 1999-2018 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-inherit eutils cmake-utils qmake-utils xdg
+inherit eutils cmake qmake-utils xdg
 
 DESCRIPTION="A QT5-based editor for the TikZ language"
 HOMEPAGE="http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language"
@@ -38,14 +38,15 @@ RDEPEND="${DEPEND}
 DOCS="Changelog TODO"
 
 src_prepare() {
-	# correct the qcollectiongenerator binary
-	sed -ie 's%#QCOLLECTIONGENERATORCOMMAND = qcollectiongenerator%QCOLLECTIONGENERATORCOMMAND = /usr/lib/qt5/bin/qcollectiongenerator%g' qmake/qtikzconfig.pri || die
+	if use kde; then
+		cmake_src_prepare
+	fi
 	eapply_user
 }
 
 src_configure() {
 	if use kde; then
-		cmake-utils_src_configure
+		cmake_src_configure
 	else
 		KDECONFIG="CONFIG-=usekde"
 		eqmake5 qtikz.pro "CONFIG+=nostrip" "$KDECONFIG"
@@ -54,10 +55,10 @@ src_configure() {
 
 src_compile() {
 		if use !doc; then
-			comment_add_subdirectory doc
+			cmake_comment_add_subdirectory doc
 		fi
 		if use kde; then
-			cmake-utils_src_compile
+			cmake_src_compile
 		else
 			emake
 		fi
@@ -65,7 +66,7 @@ src_compile() {
 
 src_install() {
 		if use kde; then
-			cmake-utils_src_install
+			cmake_src_install
 		else
 			emake INSTALL_ROOT="${D}" install
 		fi
