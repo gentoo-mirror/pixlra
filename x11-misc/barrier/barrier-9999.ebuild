@@ -1,8 +1,8 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
-inherit eutils cmake-utils flag-o-matic  git-r3
+EAPI=7
+inherit eutils cmake flag-o-matic  git-r3
 
 DESCRIPTION="Lets you easily share a single mouse and keyboard between multiple computers"
 HOMEPAGE="https://github.com/debauchee/barrier"
@@ -37,8 +37,6 @@ DEPEND="
 "
 
 RDEPEND="${DEPEND}"
-
-# PATCHES=( "${FILESDIR}"/${PN}-qt5.11-port.patch )
 
 src_configure() {
 	local mycmakeargs=(
