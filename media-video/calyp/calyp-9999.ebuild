@@ -44,5 +44,5 @@ src_configure() {
 		-DUSE_OPENCV=$(usex opencv)
 		-DUSE_STATIC=$(usex static-libs)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
