@@ -2,6 +2,8 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+dev-libs/xml-security-c:nss - Use dev-libs/nss for certain crypto operations (configureable at runtime)
+dev-libs/xml-security-c:xalan - Enable support for XSLT and XPath parsing by dev-libs/xalan-c
 media-video/calyp:ffmpeg - Support ffmpeg formats
 media-video/calyp:opencv - Support for opencv
 media-video/calyp:qt4 - GUI using Qt4 lib
