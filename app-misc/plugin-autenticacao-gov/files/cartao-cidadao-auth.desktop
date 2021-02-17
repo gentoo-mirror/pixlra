@@ -5,8 +5,8 @@ GenericName=Portugal ID card authentication
 GenericName[pt]=Autenticação Cartão do Cidadão
 Comment=Plugin de autenticação com o Cartão de Cidadão
 Comment[pt]=Plugin for Portugal ID card authentication
-Exec=java -Dsun.java2d.xrender=false -jar /usr/share/cartao-cidadao-auth/cartao-cidadao-auth.jar sj
-Icon=cartao-cidadao-auth
+Exec=java -Dsun.java2d.xrender=false -jar /usr/share/plugin-autenticacao-gov/plugin-autenticacao-gov.jar sj
+Icon=plugin-autenticacao-gov
 Terminal=false
 Type=Application
 Categories=Utility
