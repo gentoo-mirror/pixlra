@@ -1,4 +1,5 @@
 app-backup/btrfs-snap 1.7.3: btrfs-snap creates and maintains the history of snapshots of btrfs filesystems
+app-misc/autenticacao-gov-bin 3.3.1: See and change information on your Portuguese eID Card
 app-misc/plugin-autenticacao-gov 2.0.50: Autenticacao do Cartao de Cidadao em java
 dev-libs/xml-security-c 1.7.3 2.0.2: Apache C++ XML security libraries
 dev-python/guidata 1.7.9: Automatic GUI generation for easy dataset editing and display
