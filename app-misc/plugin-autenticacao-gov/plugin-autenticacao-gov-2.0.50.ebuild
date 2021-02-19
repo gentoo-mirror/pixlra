@@ -5,8 +5,6 @@ EAPI=6
 
 inherit eutils unpacker xdg
 
-MY_PN=plugin-autenticacao-gov
-
 DESCRIPTION="Autenticacao do Cartao de Cidadao em java"
 HOMEPAGE="https://www.cartaodecidadao.pt"
 LICENSE="EUPL-1.2"
@@ -41,10 +39,10 @@ src_install() {
 	# install icons
 	local i
 	for i in 16 22 24 32 48 64 128 256; do
-		newicon -s "${i}x${i}" usr/share/${MY_PN}/plugin_autenticacao_gov_${i}.png ${PN}.png
+		newicon -s "${i}x${i}" usr/share/${PN}/plugin_autenticacao_gov_${i}.png ${PN}.png
 	done
 
 	# install jar file
-	insinto /usr/share/cartao-cidadao-auth
-	newins usr/share/${MY_PN}/${MY_PN}.jar ${PN}.jar
+	insinto /usr/share/${PN}
+	newins usr/share/${PN}/${PN}.jar ${PN}.jar
 }
