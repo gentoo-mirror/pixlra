@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>joaomsantos@gmail.com</email>
+		<name>João Santos</name>
+	</maintainer>
+	<longdescription lang="en">
+		Ntfs2btrfs is a tool which does in-place conversion of Microsoft's NTFS filesystem to the open-source filesystem Btrfs.
+	</longdescription>
+</pkgmetadata>
