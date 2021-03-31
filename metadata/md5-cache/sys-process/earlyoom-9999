@@ -3,8 +3,9 @@ DEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=Early out-of-memory killer that runs in user-space
 EAPI=6
 HOMEPAGE=https://github.com/rfjakob/earlyoom
+INHERIT=git-r3
 LICENSE=MIT
 PROPERTIES=live
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
 _md5_=68ba41963a2f30d289c032a57e6be858
