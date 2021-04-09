@@ -2,7 +2,6 @@ app-backup/btrfs-snap 1.7.3: btrfs-snap creates and maintains the history of sna
 app-misc/autenticacao-gov-bin 3.3.1: See and change information on your Portuguese eID Card
 app-misc/plugin-autenticacao-gov 2.0.50: Autenticacao do Cartao de Cidadao em java
 dev-libs/xml-security-c 1.7.3 2.0.2: Apache C++ XML security libraries
-dev-python/guidata 1.7.9: Automatic GUI generation for easy dataset editing and display
 dev-util/eclipse-cpp-bin 4.7.3 4.9.0 4.10.0: Eclipse IDE for C/C++
 kde-misc/ktoshiba 9999: Function key (FN) monitoring for Toshiba laptops
 media-gfx/ktikz 0.13.1 9999: A QT5-based editor for the TikZ language
