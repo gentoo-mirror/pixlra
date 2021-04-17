@@ -6,7 +6,7 @@ dev-python/guidata 1.7.9-r1: Automatic GUI generation for easy dataset editing a
 dev-util/eclipse-cpp-bin 4.7.3 4.9.0 4.10.0: Eclipse IDE for C/C++
 kde-misc/ktoshiba 9999: Function key (FN) monitoring for Toshiba laptops
 media-gfx/ktikz 0.13.1 9999: A QT5-based editor for the TikZ language
-media-video/calyp 1.0.0-r1 9999: Calyp is an open-source QT based raw video player
+media-video/calyp 1.2.1 9999: Calyp is an open-source QT based raw video player
 net-im/yakyak-bin 1.5.2: Desktop chat client for Google Hangouts
 sys-fs/ntfs2btrfs 20210105: Conversion tool from NTFS to Btrfs
 sys-kernel/kernie 9999: Kernie - Kernel Genie, is a Gentoo kernel manager
