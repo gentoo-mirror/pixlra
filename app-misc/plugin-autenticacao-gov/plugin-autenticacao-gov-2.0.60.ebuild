@@ -9,7 +9,7 @@ DESCRIPTION="Autenticacao do Cartao de Cidadao em java"
 HOMEPAGE="https://www.cartaodecidadao.pt"
 LICENSE="EUPL-1.2"
 
-SRC_URI="https://pluginautenticacaogov.azureedge.net/generic/plugin-autenticacao-gov.deb"
+SRC_URI="https://aplicacoes.autenticacao.gov.pt/plugin/plugin-autenticacao-gov.deb"
 
 SLOT="0"
 KEYWORDS="~amd64"
