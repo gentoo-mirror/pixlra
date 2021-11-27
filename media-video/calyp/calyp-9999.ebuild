@@ -12,6 +12,9 @@ LICENSE="GPL-2"
 EGIT_REPO_URI="https://github.com/pixlra/calyp.git"
 EGIT_BRANCH="master"
 
+EGIT_OVERRIDE_COMMIT_FOONATHAN_TYPE_SAFE="a7741b85137017b32f076c606978a3e981aeed42"
+EGIT_OVERRIDE_BRANCH_FOONATHAN_TYPE_SAFE="main"
+
 SLOT=0
 KEYWORDS=""
 
@@ -36,8 +39,15 @@ RDEPEND="
 	${DEPEND}
 "
 
+src_unpack() {
+		git-r3_src_unpack
+		git-r3_fetch "https://github.com/foonathan/type_safe"
+		git-r3_checkout "https://github.com/foonathan/type_safe" "${S}/deps/type_safe"
+}
+
 src_configure() {
 	local mycmakeargs=(
+		-DFETCHCONTENT_FULLY_DISCONNECTED=ON # avoid to fetch content
 		-DUSE_SSE=$(usex cpu_flags_x86_sse)
 		-DBUILD_APP=$(usex qt5 )
 		-DUSE_FFMPEG=$(usex ffmpeg)
