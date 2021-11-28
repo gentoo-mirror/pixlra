@@ -15,7 +15,10 @@ KEYWORDS="~amd64"
 
 IUSE=""
 
-DEPEND=""
+DEPEND="
+	dev-cpp/debug_assert
+"
+
 RDEPEND="${DEPEND}"
 
 src_configure() {
