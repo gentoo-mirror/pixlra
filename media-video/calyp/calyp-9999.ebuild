@@ -19,7 +19,6 @@ X86_CPU_FEATURES="cpu_flags_x86_sse"
 IUSE="+qt5 -qt4 ffmpeg opencv -static-libs $X86_CPU_FEATURES"
 
 DEPEND="
-	dev-cpp/type_safe
 	qt5? (
 		dev-qt/qtconcurrent:5
 		dev-qt/qtcore:5
