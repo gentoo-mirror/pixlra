@@ -1,6 +1,6 @@
 app-backup/btrfs-snap 1.7.3: btrfs-snap creates and maintains the history of snapshots of btrfs filesystems
 app-misc/autenticacao-gov-bin 3.7.0: See and change information on your Portuguese eID Card
-app-misc/plugin-autenticacao-gov 2.0.63: Autenticacao do Cartao de Cidadao em java
+app-misc/plugin-autenticacao-gov 2.0.63 2.0.70: Autenticacao do Cartao de Cidadao em java
 dev-cpp/debug_assert 1.3.3: debug_assert is a simple, C++11, header-only library that provides a very flexible DEBUG_ASSERT() macro.
 dev-cpp/type_safe 0.2.2: type_safe provides zero overhead abstractions that use the C++ type system to prevent bugs.
 dev-libs/xml-security-c 1.7.3 2.0.2: Apache C++ XML security libraries
