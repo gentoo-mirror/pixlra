@@ -10,19 +10,16 @@ SRC_URI="mirror://apache/santuario/c-library/${P}.tar.gz"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="debug examples libressl nss static-libs xalan"
+IUSE="debug examples nss static-libs xalan"
 
-RDEPEND=">=dev-libs/xerces-c-3.1
-	!libressl? ( dev-libs/openssl:0= )
-	libressl? ( dev-libs/libressl:0= )
+RDEPEND=">=dev-libs/xerces-c-3.2
+	dev-libs/openssl:0=
 	nss? ( dev-libs/nss )
 	xalan? ( dev-libs/xalan-c )"
 DEPEND="${RDEPEND}"
 BDEPEND="virtual/pkgconfig"
 PATCHES=(
-	"${FILESDIR}/${PN}-1.6.1-nss-compilation-fix.patch"
-	"${FILESDIR}/${PN}-1.7.3-fix-c++14.patch"
-	"${FILESDIR}/${PN}-1.7.3_openssl1.1.patch"
+	"${FILESDIR}/${P}-libressl.patch"
 )
 
 DOCS=( CHANGELOG.txt NOTICE.txt )
