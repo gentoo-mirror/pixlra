@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DESCRIPTION=Early out-of-memory killer that runs in user-space
+EAPI=6
+HOMEPAGE=https://github.com/rfjakob/earlyoom
+INHERIT=git-r3
+LICENSE=MIT
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	27e13c09a4c7e4c78ac812f74727e676
+_md5_=68ba41963a2f30d289c032a57e6be858
