@@ -10,11 +10,10 @@ SRC_URI="mirror://apache/santuario/c-library/${P}.tar.gz"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="debug examples libressl nss static-libs xalan"
+IUSE="debug examples nss static-libs xalan"
 
 RDEPEND=">=dev-libs/xerces-c-3.2
-	!libressl? ( dev-libs/openssl:0= )
-	libressl? ( dev-libs/libressl:0= )
+	dev-libs/openssl:0=
 	nss? ( dev-libs/nss )
 	xalan? ( dev-libs/xalan-c )"
 DEPEND="${RDEPEND}"
