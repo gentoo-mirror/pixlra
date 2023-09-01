@@ -5,5 +5,8 @@
 		<email>jfmcarreira@gmail.com</email>
 		<name>Joao Carreira</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">fhackenberger/ktikz</remote-id>
+	</upstream>
 </pkgmetadata>
 
