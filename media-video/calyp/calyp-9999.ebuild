@@ -1,9 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-inherit eutils cmake git-r3
+inherit cmake git-r3
 
 DESCRIPTION="Calyp is an open-source QT based raw video player"
 HOMEPAGE="https://github.com/pixlra/calyp"
@@ -16,7 +16,7 @@ SLOT=0
 KEYWORDS=""
 
 X86_CPU_FEATURES="cpu_flags_x86_sse"
-IUSE="+qt5 -qt4 ffmpeg opencv -static-libs $X86_CPU_FEATURES"
+IUSE="+qt5 qt4 ffmpeg opencv static-libs $X86_CPU_FEATURES"
 
 DEPEND="
 	qt5? (
@@ -32,7 +32,6 @@ DEPEND="
 "
 
 RDEPEND="
-	!media-video/playuver
 	${DEPEND}
 "
 

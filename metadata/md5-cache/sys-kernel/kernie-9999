@@ -8,5 +8,5 @@ LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=app-shells/bash:0 dev-util/dialog app-admin/eclean-kernel app-portage/eix
 SLOT=0
-_eclasses_=git-r3	27e13c09a4c7e4c78ac812f74727e676
+_eclasses_=git-r3	2358a7b20091609e24bd3a83b3ac5991
 _md5_=94460702ddff12240bee306f826b6337
