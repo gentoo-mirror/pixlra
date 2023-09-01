@@ -1,16 +1,16 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-inherit eutils cmake qmake-utils git-r3 xdg
+inherit cmake qmake-utils git-r3 xdg
 
 DESCRIPTION="A QT5-based editor for the TikZ language"
 HOMEPAGE="http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language"
 LICENSE="GPL-2"
 SLOT="5"
 KEYWORDS=""
-IUSE="kde +doc -debug"
+IUSE="kde +doc debug"
 
 EGIT_REPO_URI="https://github.com/fhackenberger/ktikz.git"
 
