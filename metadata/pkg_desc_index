@@ -1,11 +1,16 @@
 app-backup/btrfs-snap 1.7.3: btrfs-snap creates and maintains the history of snapshots of btrfs filesystems
 app-misc/autenticacao-gov-bin 3.7.0 3.8.1: See and change information on your Portuguese eID Card
 app-misc/plugin-autenticacao-gov 2.0.63 2.0.70: Autenticacao do Cartao de Cidadao em java
+dev-cpp/debug_assert 1.3.3-r1: debug_assert is a simple, C++11, header-only library that provides a very flexible DEBUG_ASSERT() macro.
+dev-cpp/type_safe 0.2.2-r1: type_safe provides zero overhead abstractions that use the C++ type system to prevent bugs.
 dev-libs/xml-security-c 2.0.4: Apache C++ XML security libraries
-dev-python/guidata 1.7.9-r1 2.2.1: Automatic GUI generation for easy dataset editing and display
+dev-python/guidata 2.2.1: Automatic GUI generation for easy dataset editing and display
 dev-util/eclipse-cpp-bin 4.7.3 4.9.0 4.10.0: Eclipse IDE for C/C++
+kde-misc/ktoshiba 9999: Function key (FN) monitoring for Toshiba laptops
 media-gfx/ktikz 0.13.1-r1 9999: A QT5-based editor for the TikZ language
+media-video/calyp 2.1.0-r1 9999: Calyp is an open-source QT based raw video player
 net-im/yakyak-bin 1.5.2: Desktop chat client for Google Hangouts
 sys-fs/ntfs2btrfs 20210105: Conversion tool from NTFS to Btrfs
 sys-kernel/kernie 9999: Kernie - Kernel Genie, is a Gentoo kernel manager
 sys-process/earlyoom 1.0 9999: Early out-of-memory killer that runs in user-space
+x11-misc/barrier 9999: Lets you easily share a single mouse and keyboard between multiple computers
