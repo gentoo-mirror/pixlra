@@ -1,9 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-inherit eutils cmake
+inherit cmake
 
 DESCRIPTION="type_safe provides zero overhead abstractions that use the C++ type system to prevent bugs."
 HOMEPAGE="https://github.com/foonathan/type_safe"
